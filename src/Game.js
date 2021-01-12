@@ -355,8 +355,14 @@ export default class Game {
 
       const colour = this.players[player.id].colour;
       if (colour) p.fill(`rgb(${colour.r}, ${colour.g}, ${colour.b})`);
+      if (player.ref === "kjk") {
+        var supporter = "[Kyle Fan]"
+      };
+      if (player.ref !== "kjk") {
+        var supporter = "[Guest]"
+      }
       p.text(
-        "[" + player.rank + "] " + player.username + "    (" + player.score + ")  ",
+        supporter + player.username + "    (" + player.score + ")  ",
         windowWidth - (windowWidth / 40) * 4,
         windowWidth / 40 + (i * windowWidth) / 40
       );
