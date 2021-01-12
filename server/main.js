@@ -5,7 +5,7 @@ var io = require("socket.io")(server);
 var path = require("path");
 const width = 9;
 const height = 16;
-const COUNTDOWN = 5;
+const COUNTDOWN = 10;
 const blocks = [
   [
     [0, 1, 0],
@@ -53,7 +53,7 @@ let displayWinner = false;
 const PORT = process.env.PORT || 80;
 server.listen(PORT);
 
-console.log("What are ya doin here? - Kylw");
+console.log("What are ya doin here? - Kyle");
 
 const public = path.join(__dirname, "..", "public");
 
