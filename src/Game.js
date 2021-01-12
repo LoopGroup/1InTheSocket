@@ -339,14 +339,14 @@ export default class Game {
       windowWidth / 5 + 20,
       windowHeight / 3
     );
-    p.textSize(windowWidth / 65);
+    p.textSize(windowWidth / 60);
     p.fill(`rgba(236, 238, 244, 1)`);
     p.text(
       "Leaderboard",
       windowWidth - (windowWidth / 40) * 4,
       windowWidth / 40
     );
-    p.textSize(windowWidth / 50);
+    p.textSize(windowWidth / 70);
     let i = 1;
     for (let player of this.leaderboard) {
       if (i === 6) {
