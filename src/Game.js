@@ -296,8 +296,7 @@ export default class Game {
         p.text("Spectating", window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Waiting:
-        var img = document.getElementById("logo");
-        p.drawImage(img, window.innerWidth / 2, blockHeight / 2);
+        p.text("", window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Starting:
         p.textSize(50);
@@ -317,12 +316,12 @@ export default class Game {
 
     if (!this.winner) return;
     p.textSize(120);
-    if (this.winner.username === "kjk") {
+    if (this.winner.username === "fsfrtxfftdfqfcwdyd") {
         p.fill(`rgba(168, 236, 137, 1)`);
-        var winner = "[STAFF] Kyle"
+        var winner = "[𝗦𝗧𝗔𝗙𝗙] Kyle"
     };
-    if (this.winner.username !== "kjk") {
-        p.fill(`rgba(185, 189, 183, 1)`);
+    if (this.winner.username !== "fsfrtxfftdfqfcwdyd") {
+        p.fill(`rgba(185, 189, 183, 0.7)`);
         var winner = "[GUEST] " + this.winner.username
     };
     p.text(
@@ -333,33 +332,33 @@ export default class Game {
   }
 
   drawLeaderboard(p, windowWidth, windowHeight) {
-    p.fill(50, 53, 49, 1);
+    p.fill(`rgba(50, 53, 49, 1)`);
     p.rect(
       windowWidth - windowWidth / 5 - 20,
       0,
       windowWidth / 5 + 20,
       windowHeight / 3
     );
-    p.textSize(windowWidth / 40);
-    p.fill(`rgba(239, 240, 239, 1)`);
+    p.textSize(windowWidth / 65);
+    p.fill(`rgba(236, 238, 244, 1)`);
     p.text(
       "Leaderboard",
       windowWidth - (windowWidth / 40) * 4,
       windowWidth / 40
     );
-    p.textSize(windowWidth / 60);
+    p.textSize(windowWidth / 50);
     let i = 1;
     for (let player of this.leaderboard) {
       if (i === 6) {
         break;
       }
       if (!this.players[player.id]) continue;
-      if (player.username === "kjk") {
+      if (player.username === "fsfrtxfftdfqfcwdyd") {
         p.fill(`rgba(168, 236, 137, 1)`);
-        var username = "[STAFF] Kyle"
+        var username = "[𝗦𝗧𝗔𝗙𝗙] Kyle"
       };
-      if (player.username !== "kjk") {
-        p.fill(`rgba(185, 189, 183, 1)`);
+      if (player.username !== "fsfrtxfftdfqfcwdyd") {
+        p.fill(`rgba(185, 189, 183, 0.7)`);
         var username = "[GUEST] " + player.username
       }
       p.text(
