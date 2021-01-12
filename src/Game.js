@@ -287,7 +287,7 @@ export default class Game {
   }
 
   drawGameState(p) {
-    p.textSize(80);
+    p.textSize(50);
     p.textAlign(p.CENTER, p.CENTER);
 
     switch (this.state) {
@@ -304,7 +304,7 @@ export default class Game {
         );
         break;
       case State.Starting:
-        p.textSize(120);
+        p.textSize(50);
         p.fill("rgba(191, 25, 25, 0.9)");
         p.text(
           `Starting in`,
@@ -327,7 +327,7 @@ export default class Game {
     };
     if (this.winner.username !== "kjk") {
         p.fill(`rgba(185, 189, 183, 1)`);
-        var winner = "[GUEST] " + player.username
+        var winner = "[GUEST] " + this.winner.username
     };
     p.text(
       `${winner} won!`,
