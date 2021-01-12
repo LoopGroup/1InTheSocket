@@ -296,12 +296,8 @@ export default class Game {
         p.text("Spectating", window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Waiting:
-        p.fill("rgba(152, 120, 5, 0.7)");
-        p.text(
-          "Twissted",
-          window.innerWidth / 2,
-          blockHeight / 2
-        );
+        var img = document.getElementById("logo");
+        p.drawImage(img, window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Starting:
         p.textSize(50);
