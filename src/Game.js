@@ -296,9 +296,9 @@ export default class Game {
         p.text("Spectating", window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Waiting:
-        p.fill("rgba(25, 161, 191, 0.5)");
+        p.fill("rgba(152, 120, 5, 0.7)");
         p.text(
-          "Waiting for players...",
+          "Starting Soon",
           window.innerWidth / 2,
           blockHeight / 2
         );
@@ -356,7 +356,7 @@ export default class Game {
       const colour = this.players[player.id].colour;
       if (colour) p.fill(`rgb(${colour.r}, ${colour.g}, ${colour.b})`);
       p.text(
-        "[GUEST] " + player.username + "    (" + player.score + ")  ",
+        "[" + player.rank + "] " + player.username + "    (" + player.score + ")  ",
         windowWidth - (windowWidth / 40) * 4,
         windowWidth / 40 + (i * windowWidth) / 40
       );
