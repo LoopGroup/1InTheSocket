@@ -1,138 +1,90 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
-
 body {
-  background-color: black;
-  position: relative;
-  padding: 10px;
-  margin: 50px;
+  padding: 0;
+  margin: 0;
+  background: #F5FEF9;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #999;
 }
 
-h1 {
+#start-area {
+  width: 300px;
+  margin: 80px auto;
+}
+
+#header-area {
+  text-align: center;
+  font-weight: 700;
+}
+
+#main-header {
+  color: #433F6F;
+  font-size: 85px;
+}
+
+#sub-header {
+  color: #00B359;
+  font-size: 40px;
+}
+
+#play-area {
+  margin: 20px auto;
+}
+
+#input-area {
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid #7763CF;
+  border-radius: 30px;
+  background: #fff;
+  padding: 2px;
+}
+
+#nickname-input {
+  border: 0;
+  padding: 10px 10px;
+  width: 150px;
+  margin-left: 15px;
+  text-align: center;
+  color: #999;
+  font-size: 20px;
+  outline: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#button-area {
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid #00b158;
+  background: #00CC66;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 2px;
+}
+
+#button-area:hover {
+  background: #00b158;
+}
+
+#play-button {
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+  width: 150px;
+  padding: 10px 10px;
+  outline: 0;
+  cursor: pointer;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#greeting-area {
+  font-size: 20px;
   text-align: center;
 }
 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 5px solid red;
-  background-color: transparent;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 40px;
-  text-align:center;
-  width: 300px;
-}
-
-.text {
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.form {
-  font-family: arial, sans-serif;
-  line-height: 4;
-  margin-bottom: -25px;
-}
-
-.container {
-  padding: 30px;
-  /* position: absolute; */
-  margin: auto;
-  width: 40%;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, 50%); */
-  background-color: white;
-  border-radius: 10px;
-  text-align: left;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  33% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(3);
-    opacity: 0;
-  }
-}
-
-.button {
-  display: inline-flex;
-  margin-top: 0.9em;
-  align-items: center;
-  background: #c06c84;
-  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  height: 45px;
-  padding: 0 30px;
-  color: #fff;
-  font-family: Lato, Arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-  will-change: transform;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.animate {
-  -webkit-transition: border-color 0.4s, color 0.4s;
-  transition: border-color 0.4s, color 0.4s;
-}
-.animate::before {
-  content: "";
+#game-area {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: #37474f;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transform: scale3d(0.7, 1, 1);
-  transform: scale3d(0.7, 1, 1);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-  transition: transform 0.4s, opacity 0.4s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.animate:hover {
-  color: #fff;
-  border-color: #37474f;
-}
-.animate:hover::before {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  border-radius: 5px;
-}
-
-form {
-  text-align: center;
-}
-
-.notransition {
-  opacity: 0.5;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
-
-.iro__slider {
-  display: none !important;
-}
-
-.iro__colorPicker {
-  margin: auto;
 }
