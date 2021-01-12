@@ -340,7 +340,6 @@ export default class Game {
       windowHeight / 3
     );
     p.textSize(windowWidth / 40);
-    p.fill(0, 0, 0, 175);
     p.text(
       "Leaderboard",
       windowWidth - (windowWidth / 40) * 4,
@@ -357,7 +356,7 @@ export default class Game {
       const colour = this.players[player.id].colour;
       if (colour) p.fill(`rgb(${colour.r}, ${colour.g}, ${colour.b})`);
       p.text(
-        player.username + ": " + player.score,
+        "[GUEST] " + player.username + "    (" + player.score + ")  ",
         windowWidth - (windowWidth / 40) * 4,
         windowWidth / 40 + (i * windowWidth) / 40
       );
