@@ -53,7 +53,7 @@ let displayWinner = false;
 const PORT = process.env.PORT || 80;
 server.listen(PORT);
 
-console.log("Go to http://localhost:80");
+console.log("What are ya doin here? - Kylw");
 
 const public = path.join(__dirname, "..", "public");
 
