@@ -221,7 +221,7 @@ export default class Game {
 
   drawMap(p, windowWidth, windowHeight, pg) {
     pg.fill(0, 0);
-    pg.strokeWeight(1);
+    pg.strokeWeight(1.6);
     pg.stroke("white");
 
     let gridXLength = windowWidth / 16;
@@ -293,12 +293,12 @@ export default class Game {
     switch (this.state) {
       case State.Spectating:
         p.fill("rgba(25, 161, 191, 0.20)");
-        p.text("Spectating (Lobby 1)", window.innerWidth / 2, blockHeight / 2);
+        p.text("Spectating", window.innerWidth / 2, blockHeight / 2);
         break;
       case State.Waiting:
         p.fill("rgba(152, 120, 5, 0.7)");
         p.text(
-          "Twissted (Lobby 1)",
+          "Twissted",
           window.innerWidth / 2,
           blockHeight / 2
         );
