@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="assets/iro.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>[LOBBY] - Twissted</title>
   </head>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 <body class="text">
   <div id="start-area">
     <div id="header-area">
@@ -20,8 +20,8 @@
       <span id="greeting">Welcome!</span>
     </div>
     <div id="play-area">
-      <div id="input-area">
       <form onsubmit="return joinGame();">
+      <div id="input-area">
          <input type="text" id="username" spellcheck="false" placeholder="Nickname..." onkeyup="stoppedTyping()" maxlength="15">
       </div>
       <div id="button-area">
@@ -37,6 +37,5 @@
               </form>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</body>
+  </body>
 </html>
