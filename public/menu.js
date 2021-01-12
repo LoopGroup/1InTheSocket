@@ -35,7 +35,7 @@ function joinGame() {
   console.log("Javascript");
   const username = document.getElementById("username").value;
   const {r,g,b} = curColour;
-  const data = `?user=${username}&r=${r.toFixed(2)}&g=${g.toFixed(2)}&b=${b.toFixed(2)}`;
+  const data = `?rev="ekbfsdibI974w8f9bids83tw7cb5tgndia8w7tcbrg8baf"&user=${username}`;
   window.location.href = window.location.href + "play" + data;
 
   return false;
