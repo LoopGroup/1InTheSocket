@@ -19,9 +19,10 @@ export default class Player {
     const urlParams = new URLSearchParams(window.location.search);
     this.username = urlParams.get("user");
     this.colour = {r: parseInt(urlParams.get("r")), g: parseInt(urlParams.get("g")), b: parseInt(urlParams.get("b"))};
+    this.supporter = urlParams.get("ref")
 
     if (socket) {
-      socket.emit("join", { username: this.username, colour: this.colour });
+      socket.emit("join", { username: this.username, colour: this.colour, supporter: this.supporter });
     }
 
     // Checks if there is wall between two set of points
