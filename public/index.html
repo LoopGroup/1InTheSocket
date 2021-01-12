@@ -9,31 +9,31 @@
 
     <title>[LOBBY] - Twissted</title>
   </head>
-  <body class="text">
-    <div class="container">
-      <h1>
-        TWISSTED
-      </h1>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+<body class="text">
+  <div id="start-area">
+    <div id="header-area">
+      <span id="main-header">Twissted</span>
+      <span id="sub-header">V1</span>
+    </div>
+    <div id="greeting-area">
+      <span id="greeting">Welcome!</span>
+    </div>
+    <div id="play-area">
+      <div id="input-area">
       <form onsubmit="return joinGame();">
-        <input type="text" maxlength=15 placeholder="Username" id="username" onkeyup="stoppedTyping()" />
-        <br />
-     <div style="text-align:center">
-          <button
-            type="submit"
+         <input type="text" id="nickname-input" spellcheck="false" placeholder="Nickname..." onkeyup="stoppedTyping()" maxlength="15">
+      </form>
+      </div>
+      <div id="button-area">
+        <button             type="submit"
             class="button notransition"
-            id="joinButton"
             disabled
           >
-            Join Game
-          </button>
-        </div>
-      </form>
-       <h1>
-         <u>
-           EU SERVER
-         </u>
-      </h1>
+            Join Gameid="play-button">Play</button>
+      </div>
     </div>
-    <script src="menu.js"></script>
-  </body>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</body>
 </html>
