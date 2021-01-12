@@ -182,22 +182,14 @@ io.on("connection", function(socket) {
     }
   });
 
-  socket.on("join", ({ username, colour, key }) => {
+  socket.on("join", ({ username, colour}) => {
     const player = players[socket.id];
     player.username = username;
     player.colour = colour;
-    player.rank = key
-    if (key === "kyle") {
-      player.rank = "ADMIN"
-    };
-    if (key !== "kyle") {
-      player.rank = "GUEST"
-    };
     leaderboard.push({
       username,
       id: socket.id,
       score: 0,
-      rank,
     });
     io.emit("leaderboard", leaderboard);
     io.emit("gameData", players);
